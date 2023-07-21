@@ -19,7 +19,7 @@ Key considerations for this business problem include:
 By addressing these research questions and leveraging data analysis, EasyMyTrip aims to develop a machine learning model that accurately predicts flight prices. This model will enable the company to optimize pricing strategies, attract customers with competitive prices, and ultimately maximize its profit in the competitive online tour and travel industry.
 
 
-# Research Questions
+# Model Building Questions
 
 The aim of our study is to answer the below research questions:
 
