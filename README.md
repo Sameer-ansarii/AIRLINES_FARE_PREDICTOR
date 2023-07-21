@@ -19,7 +19,7 @@ Key considerations for this business problem include:
 By addressing these research questions and leveraging data analysis, EasyMyTrip aims to develop a machine learning model that accurately predicts flight prices. This model will enable the company to optimize pricing strategies, attract customers with competitive prices, and ultimately maximize its profit in the competitive online tour and travel industry.
 
 
-# Model Building Questions
+# Research Questions
 
 The aim of our study is to answer the below research questions:
 
@@ -33,7 +33,29 @@ d) How the price changes with change in Source and Destination?
 
 e) How does the ticket price vary between Economy and Business class?
 
-# Project Report
+# Research Report:-
+
+### A) Does price vary with Airlines?
+
+There is significant variation in ticket prices among different airlines, with Air India and Vistara having the highest average prices, while AirAsia and Indigo have comparatively lower average prices. This suggests that airline choice plays a crucial role in determining ticket prices for customers.
+
+### B) How is the price affected when tickets are bought in just 1 or 2 days before departure?
+
+Price of tickets increases significantly when they are bought just 1 or 2 days before departure. This suggests that last-minute bookings tend to be more expensive, indicating a potential price premium for the convenience of booking close to the departure date.
+
+### C) Does ticket price change based on the departure time and arrival time?
+
+Ticket prices show variations based on the departure time and arrival time. Evening and night departures tend to have higher average prices, while late night departures and early morning arrivals have relatively lower average prices. This suggests that departure and arrival times can impact ticket pricing, potentially reflecting demand patterns and preferences of travelers.
+
+### D) How the price changes with change in Source and Destination?
+
+Flight prices vary depending on the source and destination cities. The prices range from the lowest for the Delhi-Hyderabad route (17,243.94) to the highest for the Chennai-Bangalore route (25,081.85). This suggests that different routes may have different pricing dynamics influenced by factors such as distance, demand, and competition among airlines.
+
+### E) How does the ticket price vary between Economy and Business class?
+
+The average price for Business class is significantly higher than that of Economy class, indicating a notable price variation between the two classes.
+
+# Model Building Report
 
 In model building process, I experimented with various regression algorithms and discovered that Random Forest, Gradient Boosting, and XGBoost performed well. After evaluating their performance, I chose Random Forest as it demonstrated good performance on both the train and test data, indicating that it is more generalized compared to the other algorithms.
 
