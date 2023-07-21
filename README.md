@@ -32,3 +32,43 @@ c) Does ticket price change based on the departure time and arrival time?
 d) How the price changes with change in Source and Destination?
 
 e) How does the ticket price vary between Economy and Business class?
+
+# Project Report
+
+In model building process, I experimented with various regression algorithms and discovered that Random Forest, Gradient Boosting, and XGBoost performed well. After evaluating their performance, I chose Random Forest as it demonstrated good performance on both the train and test data, indicating that it is more generalized compared to the other algorithms.
+
+Next, I proceeded with hyperparameter tuning to optimize the Random Forest model. However, the results of the hyperparameter tuning did not outperform the Random Forest model with its default parameters. Therefore, I decided to stick with the Random Forest model using its simple parameters.
+
+To further assess the model's performance, I conducted cross-validation. As a result, the mean squared error (MSE) decreased, indicating improved model performance.
+
+Finally, I evaluated the Random Forest model with simple parameters on both the train and test data to ensure its effectiveness and generalization.
+
+## Model Summary
+
+* Train and Test Set
+
+|Data|	MSE|	RMSE|	MAE|	R-squared	|Adjusted R-squared|
+|------|--------|--------|-----------|------------------|---------|
+|	Train|	1,306,991	|1,143.245|	438.78|	0.99747|	0.99747|
+|	Test|	5,568,1120|	7,461.98|	4,861.69	|0.89209|	0.89206|
+
+
+* Validation Data
+
+|Metric|	Mean|
+|--------|------|
+|Mean Squared Error (MSE)|	8,013,316|
+|Root Mean Squared Error (RMSE)|	2,830.57|
+|	Mean Absolute Error (MAE)|	1,166.64|
+|	R-squared|	0.9845076|
+
+## Top predictors
+Below are the top variables that have the most significant impact on whether it will rain tomorrow or not.
+
+|Variables	|Importance|
+|---------|-------------|
+|class_Economy	|0.881975|
+|duration|	0.052071|
+|days_left|	0.020889|
+
+Airlines prices are primarily dependent on these factors, with 95% of the variation in prices being attributed to them. Specifically, 88% of the variation in prices can be explained by the factor of one class_economy alone.
